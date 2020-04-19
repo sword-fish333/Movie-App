@@ -4,10 +4,10 @@
         <div class="movie-info border-b border-grey-800">
             <div class="container mx-auto px-4 py-16 flex flex0col md:flex-row">
                 <div class="flex-none">
-                    <img src="{{asset('images/logo.jpg')}}" class="w-64 md:w-96" >
+                    <img src="{{'https://image.tmdb.org/t/p/w500/'.$movie['poster_path']}}" class="w-64 md:w-96" >
                 </div>
                 <div class="md:ml-24">
-                    <h2 class="text-4xl font-semibold">Movie title</h2>
+                    <h2 class="text-4xl font-semibold">{{$movie['title']}}</h2>
                     <div class="flex items-center text-grey-400 text-sm flex-wrap">
 
                                 <span>
@@ -15,18 +15,20 @@
 
                                 </span>
                             <span class="ml-1" >
-                                    85%
+                                   {{($movie['vote_average'] *10).'%'}}
                                 </span>
                             <span class="mx-2">|</span>
-                            <span>Feb 20,2020</span>
+                            <span>{{\Carbon\Carbon::parse($movie['release_date'])->format('M d,Y')}}</span>
                             <span class="mx-2">|</span>
                                 <span>
-                                Action,Thriller, Comedy
+                                @foreach($movie['genres'] as $genre)
+
+                                    {{$genre['name']}} @if(!$loop->last) , @endif
+                                    @endforeach
                                 </span>
                     </div>
                     <p class="text-grey-300 mt-8">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aliquid animi asperiores aspernatur consectetur consequuntur, deleniti doloribus dolorum eos et eum ipsa iste laudantium nam nesciunt nulla, quaerat quam ratione sapiente sequi soluta ullam velit veniam voluptates? Architecto eligendi est in nobis placeat saepe veniam! Ad fugit nostrum veniam!
-
+{{$movie['overview']}}
                     </p>
                     <div class="mt-12">
                         <h4 class="text-white font-semibold">

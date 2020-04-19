@@ -23,7 +23,10 @@ return [
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
     ],
-
+    'tmdb'=>[
+        'token'=>env('TMDB_TOKEN'),
+        'url'=>env('TMDB_URL')
+    ],
     'ses' => [
         'key' => env('AWS_ACCESS_KEY_ID'),
         'secret' => env('AWS_SECRET_ACCESS_KEY'),

@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bbab3087-597b-4020-bc48-fb25fe4922f6" name="Default" comment="" />
+    <list default="true" id="bbab3087-597b-4020-bc48-fb25fe4922f6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -152,6 +162,9 @@
       <updated>1587237270586</updated>
       <workItem from="1587237271742" duration="6064000" />
       <workItem from="1587244174222" duration="6991000" />
+      <workItem from="1587293197885" duration="4000" />
+      <workItem from="1587293739640" duration="626000" />
+      <workItem from="1587300067282" duration="5371000" />
     </task>
     <servers />
   </component>
@@ -162,9 +175,18 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2267" y="11" width="672" height="676" key="search.everywhere.popup" timestamp="1587253380226">
+    <state x="2386" y="121" width="424" height="479" key="FileChooserDialogImpl" timestamp="1587293763985">
       <screen x="1920" y="0" width="1366" height="768" />
     </state>
+    <state x="2386" y="121" width="424" height="479" key="FileChooserDialogImpl/1920.0.1366.768/0.0.1920.728@1920.0.1366.768" timestamp="1587293763985" />
+    <state x="347" y="160" key="run.anything.popup" timestamp="1587332656220">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="347" y="160" key="run.anything.popup/1920.0.1366.768/0.0.1366.728@0.0.1366.728" timestamp="1587332656220" />
+    <state x="347" y="10" width="672" height="641" key="search.everywhere.popup" timestamp="1587335442434">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="347" y="10" width="672" height="641" key="search.everywhere.popup/1920.0.1366.768/0.0.1366.728@0.0.1366.728" timestamp="1587335442434" />
     <state x="2267" y="11" width="672" height="676" key="search.everywhere.popup/1920.0.1366.768/0.0.1920.728@1920.0.1366.768" timestamp="1587253380226" />
   </component>
 </project>

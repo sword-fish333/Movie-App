@@ -6,7 +6,7 @@
 
     <meta name="author" content="Alin Ghiurca">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="{{asset('css/custom_styles.css')}}">
 
     <title>Movie App</title>

@@ -13,10 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
 
-Route::get('/show', function () {
-    return view('show');
+Route::group(['as'=>'movies.'],function (){
+   Route::get('/','MoviesController@index')->name('index');
+    Route::get('/show/{id}','MoviesController@show')->name('show');
+
 });
