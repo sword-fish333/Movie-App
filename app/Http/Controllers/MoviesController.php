@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\ViewModels\MovieViewModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
@@ -28,8 +29,10 @@ class MoviesController extends Controller
     }
 
     public function show($id){
-        $movie=Http::withToken(config('services.tmdb.token'))->get(config('services.tmdb.url').'movie/'.$id)->json();
+        $movie=Http::withToken(config('services.tmdb.token'))->get('https://api.themoviedb.org/3/movie/'.$id.'?append_to_response=credits,cast,videos,images')
+            ->json();
+        $viewModel = new MovieViewModel($movie);
 
-        return view('show',compact('movie'));
+            return view('show',$viewModel);
     }
 }
