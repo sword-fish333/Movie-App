@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{{asset('css/custom_styles.css')}}">
 
     <title>Movie App</title>
+    @livewireStyles
+
 </head>
 <body class="font-sans bg-gray-900 text-white">
 <nav class="border-b border-grey-800">
@@ -21,7 +23,7 @@
                 <li class="md:ml-6 mt-3 md:mt-0"><a href="" class="hover:text-grey-300 ">Actors</a></li>
             </ul>
         <div class="flex flex-col md:flex-row items-center">
-            <input type="text" placeholder="Search" class="bg-gray-800 rounded-full text-sm w-64 px-4 pl-8 focus:outline-none focus:shadow-outline py-1">
+            <livewire:search-dropdown/>
         <div class="md:ml-4 mt-3 md:mt-0"><a href="">
                 <img src="{{asset('images/avatar.jpg')}}" alt="avatar" class="rounded-full w-8 h-8">
             </a></div>
@@ -30,5 +32,6 @@
 </nav>
 @yield('content')
 </body>
+@livewireScripts
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
 </html>
