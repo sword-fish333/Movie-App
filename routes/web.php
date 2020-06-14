@@ -19,3 +19,9 @@ Route::group(['as'=>'movies.'],function (){
     Route::get('/show/{id}','MoviesController@show')->name('show');
 
 });
+
+Route::group(['as'=>'actors.'],function (){
+    Route::get('/','ActorsController@index')->name('index');
+    Route::get('/show/{actor}','ActorsController@show')->name('show');
+
+});
